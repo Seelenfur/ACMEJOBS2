@@ -12,5 +12,3 @@ This is the Starter-Project project, which is intended to be a core learning ass
 who have enroled the Design and Testing subject of the Software Engineering curriculum of the 
 University of Sevilla.  This project provides a template our students can use to get their projects 
 up and running very quickly.
-
-MARIA ES LA MAS WAPA
