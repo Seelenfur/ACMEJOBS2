@@ -27,7 +27,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class UserIdentity extends DomainDatatype {
+public class UserIdentity extends DomainDatatype { //aaa
 
 	// Serialisation identifier -----------------------------------------------
 
