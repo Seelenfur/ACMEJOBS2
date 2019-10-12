@@ -28,4 +28,4 @@ The following tools and components are required:
 
 
 -Update de David.
-
+-Sergio Sánchez León <sersanleo@alum.us.es>
