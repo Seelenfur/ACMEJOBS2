@@ -29,3 +29,4 @@ The following tools and components are required:
 -Update de Ale :D
 -Update de David.
 -Sergio Sánchez León <sersanleo@alum.us.es>
+-María Marín Serrano <marmarser5@alum.us.es>
