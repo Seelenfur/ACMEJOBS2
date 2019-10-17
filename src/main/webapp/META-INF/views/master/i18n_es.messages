@@ -10,13 +10,13 @@
 
 # master.banner.welcome #######################################################
 
-master.banner.background = #FFE97F 
+master.banner.background = #dfb4da
 
 ﻿# master.welcome ##############################################################
 
 master.welcome.title = ¡Bienvenidos!
 master.welcome.text = \
-	Bienvenidos a Acme Jobs!  Nunca antes ha sido tan sencillo obtener un \
+	¡Bienvenidos a Acme Jobs!  Nunca antes ha sido tan sencillo obtener un \
 	nuevo trabajo.
 
 # master.menu #################################################################
