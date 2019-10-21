@@ -52,7 +52,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "author", "text	");
+		request.unbind(entity, model, "author", "text");
 	}
 
 	@Override

@@ -23,14 +23,15 @@ import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Anonymous;
 
-@Controller  //Declares class as a controller
-@RequestMapping("/anonymous/shout/")  //endpoint
+@Controller
+@RequestMapping("/anonymous/shout/")
 public class AnonymousShoutController extends AbstractController<Anonymous, Shout> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
 	private AnonymousShoutListService	listService;
+	@Autowired
 	private AnonymousShoutCreateService	createService;
 
 
