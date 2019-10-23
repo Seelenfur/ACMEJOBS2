@@ -20,6 +20,15 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `caceres_bulletin` (
+       `id` integer not null,
+        `version` integer not null,
+        `author` varchar(255),
+        `moment` datetime(6),
+        `text` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
@@ -28,17 +37,8 @@
         `sector` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
-    
-      create table `caceres_bulletin` (
-       `id` integer not null,
-        `version` integer not null,
-        `author` varchar(255),
-        `moment` datetime(6),
-        `text` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-    
-        create table `gonzalez_bulletin` (
+
+    create table `gonzalez_bulletin` (
        `id` integer not null,
         `version` integer not null,
         `author` varchar(255),
@@ -55,8 +55,17 @@
         `text` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
-    
-        create table `sanchez_bulletin` (
+
+    create table `provider` (
+       `id` integer not null,
+        `version` integer not null,
+        `user_account_id` integer,
+        `company` varchar(255),
+        `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `sanchez_bulletin` (
        `id` integer not null,
         `version` integer not null,
         `author` varchar(255),
@@ -65,12 +74,12 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `provider` (
+    create table `shout` (
        `id` integer not null,
         `version` integer not null,
-        `user_account_id` integer,
-        `company` varchar(255),
-        `sector` varchar(255),
+        `author` varchar(255),
+        `moment` datetime(6),
+        `text` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

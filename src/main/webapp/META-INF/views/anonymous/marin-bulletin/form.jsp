@@ -4,9 +4,9 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="anonymous.shout.form.label.author" path="author"/>
-	<acme:form-textarea code="anonymous.shout.form.label.text" path="text"/>
+	<acme:form-textbox code="anonymous.marin-bulletin.form.label.author" path="author"/>
+	<acme:form-textarea code="anonymous.marin-bulletin.form.label.text" path="text"/>
 	
-	<acme:form-submit code="anonymous.shout.form.button.create" action="/anonymous/marin-bulletin/create"/>
-	<acme:form-return code="anonymous.shout.form.button.return"/>
-</acme:form> >
+	<acme:form-submit code="anonymous.marin-bulletin.form.button.create" action="/anonymous/marin-bulletin/create"/>
+	<acme:form-return code="anonymous.marin-bulletin.form.button.return"/>
+</acme:form>
