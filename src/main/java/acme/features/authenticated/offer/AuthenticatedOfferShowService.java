@@ -15,28 +15,28 @@ package acme.features.authenticated.offer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.company.Company;
+import acme.entities.offer.Offer;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedOfferShowService implements AbstractShowService<Authenticated, Company> {
+public class AuthenticatedOfferShowService implements AbstractShowService<Authenticated, Offer> {
 
 	@Autowired
 	AuthenticatedOfferRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Company> request) {
+	public boolean authorise(final Request<Offer> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Company> request, final Company entity, final Model model) {
+	public void unbind(final Request<Offer> request, final Offer entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -45,10 +45,10 @@ public class AuthenticatedOfferShowService implements AbstractShowService<Authen
 	}
 
 	@Override
-	public Company findOne(final Request<Company> request) {
+	public Offer findOne(final Request<Offer> request) {
 
 		assert request != null;
-		Company result;
+		Offer result;
 		int id;
 
 		id = request.getModel().getInteger("id");

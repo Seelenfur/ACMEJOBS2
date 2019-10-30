@@ -6,15 +6,15 @@ import java.util.Collection;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.company.Company;
+import acme.entities.offer.Offer;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
 public interface AuthenticatedOfferRepository extends AbstractRepository {
 
 	@Query("select c from Company c where c.id = ?1")
-	Company findOneById(int id);
+	Offer findOneById(int id);
 
-	@Query("select c from Company c")
-	Collection<Company> findManyAll();
+	@Query("select o from Offer o where o.deadline > current_timestamp()")
+	Collection<Offer> findManyAll();
 }

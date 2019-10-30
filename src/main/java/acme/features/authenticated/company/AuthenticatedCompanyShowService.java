@@ -16,14 +16,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.company.Company;
-import acme.entities.offer.Offer;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedCompanyShowService implements AbstractShowService<Authenticated, Offer> {
+public class AuthenticatedCompanyShowService implements AbstractShowService<Authenticated, Company> {
 
 	@Autowired
 	AuthenticatedCompanyRepository repository;

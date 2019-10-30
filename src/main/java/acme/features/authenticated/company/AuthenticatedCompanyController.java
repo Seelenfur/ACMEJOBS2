@@ -18,21 +18,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.offer.Offer;
-import acme.features.authenticated.offer.AuthenticatedOfferListService;
-import acme.features.authenticated.offer.AuthenticatedOfferShowService;
+import acme.entities.company.Company;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Authenticated;
 
 @Controller
 @RequestMapping("/authenticated/company/")
-public class AuthenticatedCompanyController extends AbstractController<Authenticated, Offer> {
+public class AuthenticatedCompanyController extends AbstractController<Authenticated, Company> {
 
 	@Autowired
-	private AuthenticatedOfferListService	listService;
+	private AuthenticatedCompanyListService	listService;
 	@Autowired
-	private AuthenticatedOfferShowService	showService;
+	private AuthenticatedCompanyShowService	showService;
 
 
 	@PostConstruct

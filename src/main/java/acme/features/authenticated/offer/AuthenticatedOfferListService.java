@@ -17,31 +17,31 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.company.Company;
+import acme.entities.offer.Offer;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedOfferListService implements AbstractListService<Authenticated, Company> {
+public class AuthenticatedOfferListService implements AbstractListService<Authenticated, Offer> {
 
 	@Autowired
 	AuthenticatedOfferRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Company> request) {
+	public boolean authorise(final Request<Offer> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public Collection<Company> findMany(final Request<Company> request) {
+	public Collection<Offer> findMany(final Request<Offer> request) {
 		assert request != null;
 
-		Collection<Company> result;
+		Collection<Offer> result;
 
 		result = this.repository.findManyAll();
 
@@ -49,7 +49,7 @@ public class AuthenticatedOfferListService implements AbstractListService<Authen
 	}
 
 	@Override
-	public void unbind(final Request<Company> request, final Company entity, final Model model) {
+	public void unbind(final Request<Offer> request, final Offer entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
