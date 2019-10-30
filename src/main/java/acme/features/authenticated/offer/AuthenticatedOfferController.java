@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.company;
+package acme.features.authenticated.offer;
 
 import javax.annotation.PostConstruct;
 
@@ -18,16 +18,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.offer.Offer;
-import acme.features.authenticated.offer.AuthenticatedOfferListService;
-import acme.features.authenticated.offer.AuthenticatedOfferShowService;
+import acme.entities.company.Company;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Authenticated;
 
 @Controller
 @RequestMapping("/authenticated/company/")
-public class AuthenticatedCompanyController extends AbstractController<Authenticated, Offer> {
+public class AuthenticatedOfferController extends AbstractController<Authenticated, Company> {
 
 	@Autowired
 	private AuthenticatedOfferListService	listService;

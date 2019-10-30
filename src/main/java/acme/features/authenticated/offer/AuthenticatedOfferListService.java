@@ -10,23 +10,24 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.company;
+package acme.features.authenticated.offer;
+
+import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.company.Company;
-import acme.entities.offer.Offer;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
-import acme.framework.services.AbstractShowService;
+import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedCompanyShowService implements AbstractShowService<Authenticated, Offer> {
+public class AuthenticatedOfferListService implements AbstractListService<Authenticated, Company> {
 
 	@Autowired
-	AuthenticatedCompanyRepository repository;
+	AuthenticatedOfferRepository repository;
 
 
 	@Override
@@ -37,24 +38,23 @@ public class AuthenticatedCompanyShowService implements AbstractShowService<Auth
 	}
 
 	@Override
+	public Collection<Company> findMany(final Request<Company> request) {
+		assert request != null;
+
+		Collection<Company> result;
+
+		result = this.repository.findManyAll();
+
+		return result;
+	}
+
+	@Override
 	public void unbind(final Request<Company> request, final Company entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "name", "sector", "ceo", "activities", "website", "phone", "email", "stars");
+		request.unbind(entity, model, "name", "website", "phone", "email", "stars");
 	}
 
-	@Override
-	public Company findOne(final Request<Company> request) {
-
-		assert request != null;
-		Company result;
-		int id;
-
-		id = request.getModel().getInteger("id");
-		result = this.repository.findOneById(id);
-
-		return result;
-	}
 }
