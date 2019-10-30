@@ -21,11 +21,15 @@
 
     drop table if exists `administrator`;
 
+    drop table if exists `announcement`;
+
     drop table if exists `anonymous`;
 
     drop table if exists `authenticated`;
 
     drop table if exists `caceres_bulletin`;
+
+    drop table if exists `company`;
 
     drop table if exists `consumer`;
 

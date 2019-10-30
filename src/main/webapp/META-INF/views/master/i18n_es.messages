@@ -26,6 +26,8 @@ master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
 
+master.menu.list-company = Listar compañías
+
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo

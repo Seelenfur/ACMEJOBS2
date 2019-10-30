@@ -36,15 +36,7 @@
 		<property name="moment" value="2019/09/06 01:00" />
 	</bean>
 	
-	
 	<!-- Announcements -->
-		
-	<bean id="announcement01" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample announcement 01" />
-		<property name="moment" value="2019/10/06 14:00" />
-		<property name="moreInfo"><null/></property>
-		<property name="text" value="This is a description of a sample announcement" />
-	</bean>
 	
 	<bean id="announcement02" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 02" />
@@ -60,7 +52,6 @@
 		<property name="text" value="This is a description of a very old announcement" />
 	</bean>
 	
-	
 		<!-- Caceres bulletin -->
 	
 	<bean id="caceresbulletin01" class="acme.entities.bulletins.CaceresBulletin">
@@ -74,7 +65,6 @@
 		<property name="text" value="Bulletin 2" />
 		<property name="moment" value="2019/09/07 09:00" />
 	</bean>
-  
   
   	<!-- Gonzalez bulletin -->
 	
@@ -90,7 +80,6 @@
 		<property name="moment" value="2019/09/18 14:00" />
 	</bean>
 
-
 	<!-- María's Bulletin -->
 
 	<bean id="marinBulletin01" class="acme.entities.bulletins.MarinBulletin">
@@ -105,7 +94,6 @@
 		<property name="moment" value="2019/09/09 12:00" />
 	</bean>
 
-
 	<!-- Sanchez bulletin -->
 
 	<bean id="sanchezbulletin01" class="acme.entities.bulletins.SanchezBulletin">
@@ -118,6 +106,20 @@
 		<property name="author" value="Sergio Sánchez" />
 		<property name="text" value="My second bulletin" />
 		<property name="moment" value="2019/09/09 02:00" />
+	</bean>
+
+
+	<!-- Companies -->
+
+	<bean id="company01" class="acme.entities.company.Company">
+		<property name="name" value="Google" />
+		<property name="sector" value="Tecnología" />
+		<property name="ceo" value="Sundar Pichai" />
+		<property name="activities" value="Realizan actividades varias" />
+		<property name="website" value="http://google.com" />
+		<property name="phone" value="+1 2025550176" />
+		<property name="email" value="google@gmail.com" />
+		<property name="corporated" value="true" />
 	</bean>
 	
 </beans>
