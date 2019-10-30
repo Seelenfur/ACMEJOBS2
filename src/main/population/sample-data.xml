@@ -36,6 +36,31 @@
 		<property name="moment" value="2019/09/06 01:00" />
 	</bean>
 	
+	
+	<!-- Announcements -->
+		
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 01" />
+		<property name="moment" value="2019/10/06 14:00" />
+		<property name="moreInfo"><null/></property>
+		<property name="text" value="This is a description of a sample announcement" />
+	</bean>
+	
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 02" />
+		<property name="moment" value="2019/06/07 10:00" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="text" value="This is a description of another announcement" />
+	</bean>
+	
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample very old announcement 03" />
+		<property name="moment" value="1930/01/09 04:00" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="text" value="This is a description of a very old announcement" />
+	</bean>
+	
+	
 		<!-- Caceres bulletin -->
 	
 	<bean id="caceresbulletin01" class="acme.entities.bulletins.CaceresBulletin">
@@ -49,6 +74,7 @@
 		<property name="text" value="Bulletin 2" />
 		<property name="moment" value="2019/09/07 09:00" />
 	</bean>
+  
   
   	<!-- Gonzalez bulletin -->
 	
@@ -64,6 +90,7 @@
 		<property name="moment" value="2019/09/18 14:00" />
 	</bean>
 
+
 	<!-- María's Bulletin -->
 
 	<bean id="marinBulletin01" class="acme.entities.bulletins.MarinBulletin">
@@ -77,6 +104,7 @@
 		<property name="text" value="Marin Bulletin 02" />
 		<property name="moment" value="2019/09/09 12:00" />
 	</bean>
+
 
 	<!-- Sanchez bulletin -->
 

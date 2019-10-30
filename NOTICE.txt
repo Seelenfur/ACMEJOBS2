@@ -28,5 +28,5 @@ The following tools and components are required:
 
 -Update de Ale :D
 -Update de David.
--Sergio Sánchez León <sersanleo@alum.us.es>
--María Marín Serrano <marmarser5@alum.us.es>
+-Sergio Sï¿½nchez Leï¿½n <sersanleo@alum.us.es>
+-Marï¿½a Marï¿½n Serrano <marmarser5@alum.us.es>
