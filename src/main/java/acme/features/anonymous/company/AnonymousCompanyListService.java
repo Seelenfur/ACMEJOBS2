@@ -54,7 +54,7 @@ public class AnonymousCompanyListService implements AbstractListService<Anonymou
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "name", "sector", "ceo", "activities", "website", "phone", "email", "corporated");
+		request.unbind(entity, model, "name", "website", "phone", "email", "stars");
 	}
 
 }

@@ -19,8 +19,9 @@
 <acme:list>
 	<acme:list-column code="authenticated.company.list.label.name" path="name" width="20%" />
 	<acme:list-column code="authenticated.company.list.label.website" path="website" width="30%" />
-	<acme:list-column code="authenticated.company.list.label.phone" path="phone" width="25%" />
-	<acme:list-column code="authenticated.company.list.label.email" path="email" width="25%" />
+	<acme:list-column code="authenticated.company.list.label.phone" path="phone" width="22.5%" />
+	<acme:list-column code="authenticated.company.list.label.email" path="email" width="22.5%" />
+	<acme:list-column code="authenticated.company.list.label.stars" path="stars" width="5%" />
 </acme:list>
 
 

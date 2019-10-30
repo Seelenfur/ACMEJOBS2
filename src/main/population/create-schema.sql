@@ -49,6 +49,7 @@
         `name` varchar(255),
         `phone` varchar(255),
         `sector` varchar(255),
+        `stars` integer,
         `website` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;

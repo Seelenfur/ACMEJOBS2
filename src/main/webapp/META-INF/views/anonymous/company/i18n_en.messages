@@ -5,9 +5,11 @@ anonymous.company.form.label.activities = Activities
 anonymous.company.form.label.website = Web
 anonymous.company.form.label.phone = Contact phone
 anonymous.company.form.label.email = Contact email
+anonymous.company.form.label.stars = Stars
 anonymous.company.form.button.return = Return
 
 anonymous.company.list.label.name = Name
 anonymous.company.list.label.website = Web
 anonymous.company.list.label.phone = Contact phone
 anonymous.company.list.label.email = Contact email
+anonymous.company.list.label.stars = Stars

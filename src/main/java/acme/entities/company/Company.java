@@ -6,6 +6,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
+import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.URL;
 
 import acme.framework.entities.DomainEntity;
@@ -41,6 +42,9 @@ public class Company extends DomainEntity {
 	private String				email;
 
 	private boolean				corporated;
+
+	@Range(min = 0, max = 5)
+	private Integer				stars;
 
 
 	public String getName() {

@@ -5,9 +5,11 @@ authenticated.company.form.label.activities = Actividades
 authenticated.company.form.label.website = Web
 authenticated.company.form.label.phone = Teléfono de contacto
 authenticated.company.form.label.email = Email de contacto
+authenticated.company.form.label.stars = Estrellas
 authenticated.company.form.button.return = Volver
 
 authenticated.company.list.label.name = Nombre
 authenticated.company.list.label.website = Web
 authenticated.company.list.label.phone = Teléfono de contacto
 authenticated.company.list.label.email = Email de contacto
+authenticated.company.list.label.stars = Estrellas
