@@ -29,6 +29,7 @@ master.menu.sign-out = Salir
 master.menu.list-announcement = Listar anuncios
 master.menu.list-company = Listar compañías
 master.menu.list-offer = Listar ofertas
+master.menu.list-top-companies = Listar compañías top
 
 # master.menu.anonymous #######################################################
 

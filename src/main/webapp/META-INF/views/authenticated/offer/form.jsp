@@ -4,6 +4,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form readonly="true">
+	<acme:form-textbox code="authenticated.offer.form.label.ticker" path="ticker"/>
 	<acme:form-textbox code="authenticated.offer.form.label.title" path="title"/>
 	<acme:form-textbox code="authenticated.offer.form.label.moment" path="moment"/>
 	<acme:form-textbox code="authenticated.offer.form.label.deadline" path="deadline"/>

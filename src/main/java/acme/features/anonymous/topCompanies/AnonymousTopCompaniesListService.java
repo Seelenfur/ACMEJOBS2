@@ -10,38 +10,38 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.offer;
+package acme.features.anonymous.topCompanies;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.offer.Offer;
+import acme.entities.company.Company;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedOfferListService implements AbstractListService<Authenticated, Offer> {
+public class AnonymousTopCompaniesListService implements AbstractListService<Anonymous, Company> {
 
 	@Autowired
-	AuthenticatedOfferRepository repository;
+	AnonymousTopCompaniesRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Offer> request) {
+	public boolean authorise(final Request<Company> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public Collection<Offer> findMany(final Request<Offer> request) {
+	public Collection<Company> findMany(final Request<Company> request) {
 		assert request != null;
 
-		Collection<Offer> result;
+		Collection<Company> result;
 
 		result = this.repository.findManyAll();
 
@@ -49,12 +49,12 @@ public class AuthenticatedOfferListService implements AbstractListService<Authen
 	}
 
 	@Override
-	public void unbind(final Request<Offer> request, final Offer entity, final Model model) {
+	public void unbind(final Request<Company> request, final Company entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "ticker", "title", "deadline", "minMoney", "maxMoney");
+		request.unbind(entity, model, "name", "website", "phone", "email", "stars");
 	}
 
 }

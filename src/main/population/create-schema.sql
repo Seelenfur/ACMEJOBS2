@@ -91,6 +91,7 @@
         `min_money_amount` double precision,
         `min_money_currency` varchar(255),
         `moment` datetime(6),
+        `ticker` varchar(255),
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;

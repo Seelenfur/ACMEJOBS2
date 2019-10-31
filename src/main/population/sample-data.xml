@@ -146,6 +146,7 @@
 		<property name="description" value="Programar Java." />
 		<property name="minMoney" value="14000€" />
 		<property name="maxMoney" value="18000€" />
+		<property name="ticker" value="OAAAA-00000" />
 	</bean>
 
 	<bean id="offer02" class="acme.entities.offer.Offer">
@@ -154,7 +155,7 @@
 		<property name="deadline" value="2020/04/03 10:00" />
 		<property name="description" value="Programar Python." />
 		<property name="minMoney" value="14000€" />
-		<property name="maxMoney" value="18000€" />
+		<property name="ticker" value="OAAAA-00001" />
 	</bean>
 
 </beans>
