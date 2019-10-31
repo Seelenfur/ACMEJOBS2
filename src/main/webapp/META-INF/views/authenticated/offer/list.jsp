@@ -17,8 +17,8 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="authenticated.offer.list.label.ticker" path="ticker" width="7.5%" />
-	<acme:list-column code="authenticated.offer.list.label.title" path="title" width="32.5%" />
+	<acme:list-column code="authenticated.offer.list.label.ticker" path="ticker" width="10%" />
+	<acme:list-column code="authenticated.offer.list.label.title" path="title" width="30%" />
 	<acme:list-column code="authenticated.offer.list.label.deadline" path="deadline" width="20%" />
 	<acme:list-column code="authenticated.offer.list.label.minMoney" path="minMoney" width="20%" />
 	<acme:list-column code="authenticated.offer.list.label.maxMoney" path="maxMoney" width="20%" />
