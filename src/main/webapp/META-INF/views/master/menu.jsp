@@ -19,7 +19,9 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-
+			<acme:menu-suboption code="master.menu.list-investor" action="/anonymous/investor/list" />
+			
+			
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-1" action="http://www.instagram.com/" />
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-2" action="http://www.twitter.com/" />
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-3" action="http://www.youtube.com/" />

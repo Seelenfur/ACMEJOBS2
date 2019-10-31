@@ -2,9 +2,9 @@
 package acme.entities.investor;
 
 import javax.persistence.Entity;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
+
+import org.hibernate.validator.constraints.Range;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -28,7 +28,6 @@ public class Investor extends DomainEntity {
 	@NotBlank
 	private String				investorStatement;
 
-	@Min(0)
-	@Max(5)
+	@Range(min = 0, max = 5)
 	private Integer				starNumber;
 }

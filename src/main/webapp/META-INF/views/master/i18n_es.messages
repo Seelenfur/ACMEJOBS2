@@ -26,6 +26,9 @@ master.menu.sign-up = Registrarse
 master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
 
+
+master.menu.list-investor = Lista inversores
+
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo
