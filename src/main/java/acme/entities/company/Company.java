@@ -47,7 +47,7 @@ public class Company extends DomainEntity {
 	private Integer				stars;
 
 
-	public String getName() {
+	public String getCorporatedName() {
 		return this.name + (this.corporated ? ", Inc." : ", LLC");
 	}
 }

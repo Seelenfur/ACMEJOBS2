@@ -17,7 +17,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="anonymous.company.list.label.name" path="name" width="20%" />
+	<acme:list-column code="anonymous.company.list.label.name" path="corporatedName" width="20%" />
 	<acme:list-column code="anonymous.company.list.label.website" path="website" width="30%" />
 	<acme:list-column code="anonymous.company.list.label.phone" path="phone" width="22.5%" />
 	<acme:list-column code="anonymous.company.list.label.email" path="email" width="22.5%" />

@@ -154,7 +154,8 @@
 		<property name="moment" value="2019/10/20 10:00" />
 		<property name="deadline" value="2020/04/03 10:00" />
 		<property name="description" value="Programar Python." />
-		<property name="minMoney" value="14000€" />
+		<property name="minMoney" value="12000€" />
+		<property name="maxMoney" value="16000€" />
 		<property name="ticker" value="OAAAA-00001" />
 	</bean>
 

@@ -41,7 +41,7 @@ public class AnonymousCompanyShowService implements AbstractShowService<Anonymou
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "name", "sector", "ceo", "activities", "website", "phone", "email", "stars");
+		request.unbind(entity, model, "corporatedName", "sector", "ceo", "activities", "website", "phone", "email", "stars");
 	}
 
 	@Override

@@ -54,7 +54,7 @@ public class AuthenticatedCompanyListService implements AbstractListService<Auth
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "name", "website", "phone", "email", "stars");
+		request.unbind(entity, model, "corporatedName", "website", "phone", "email", "stars");
 	}
 
 }
