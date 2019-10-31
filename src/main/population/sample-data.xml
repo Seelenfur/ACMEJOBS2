@@ -120,4 +120,30 @@
 		<property name="moment" value="2019/09/09 02:00" />
 	</bean>
 	
+	
+	<!-- Investor Records -->
+		
+	<bean id="investor01" class="acme.entities.investor.Investor">
+		<property name="name" value="Sample investor 01" />
+		<property name="sector" value="Agricultura" />
+		<property name="investorStatement" value="Conforme"/>
+		<property name="starNumber" value="1" />
+	</bean>
+	
+	<bean id="investor02" class="acme.entities.investor.Investor">
+		<property name="name" value="Sample investor 01" />
+		<property name="sector" value="Agricultura" />
+		<property name="investorStatement" value="Conforme"/>
+		<property name="starNumber" value="1" />
+	</bean>
+	
+	<bean id="investor03" class="acme.entities.investor.Investor">
+		<property name="name" value="Sample investor 01" />
+		<property name="sector" value="Agricultura" />
+		<property name="investorStatement" value="Conforme"/>
+		<property name="starNumber" value="1" />
+	</bean>
+	
+	
+	
 </beans>
