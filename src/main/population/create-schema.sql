@@ -81,6 +81,20 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `offer` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `moment` datetime(6),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `provider` (
        `id` integer not null,
         `version` integer not null,

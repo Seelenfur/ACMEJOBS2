@@ -42,4 +42,6 @@ public class Offer extends DomainEntity {
 
 	@Valid
 	private Money				maxMoney;
+
+	// FALTA AÑADIR EL TICKERRRRRRRRRRRRRRR
 }

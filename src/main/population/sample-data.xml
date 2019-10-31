@@ -137,4 +137,24 @@
 		</property>
 	</bean>
 
+	<!-- Offers -->
+
+	<bean id="offer01" class="acme.entities.offer.Offer">
+		<property name="title" value="Programador en Acme" />
+		<property name="moment" value="2019/10/20 10:00" />
+		<property name="deadline" value="2020/03/01 10:00" />
+		<property name="description" value="Programar Java." />
+		<property name="minMoney" value="14000€" />
+		<property name="maxMoney" value="18000€" />
+	</bean>
+
+	<bean id="offer02" class="acme.entities.offer.Offer">
+		<property name="title" value="Programador en Acme" />
+		<property name="moment" value="2019/10/20 10:00" />
+		<property name="deadline" value="2020/04/03 10:00" />
+		<property name="description" value="Programar Python." />
+		<property name="minMoney" value="14000€" />
+		<property name="maxMoney" value="18000€" />
+	</bean>
+
 </beans>

@@ -12,7 +12,7 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AuthenticatedOfferRepository extends AbstractRepository {
 
-	@Query("select c from Company c where c.id = ?1")
+	@Query("select o from Offer o where o.id = ?1")
 	Offer findOneById(int id);
 
 	@Query("select o from Offer o where o.deadline > current_timestamp()")

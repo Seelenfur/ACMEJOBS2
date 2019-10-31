@@ -37,6 +37,8 @@
 
     drop table if exists `marin_bulletin`;
 
+    drop table if exists `offer`;
+
     drop table if exists `provider`;
 
     drop table if exists `sanchez_bulletin`;
