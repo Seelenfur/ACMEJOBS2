@@ -61,6 +61,25 @@
 	</bean>
 	
 	
+	<!-- Requests -->
+		
+	<bean id="request01" class="acme.entities.reqs.Req">
+		<property name="title" value="Sample Request 01" />
+		<property name="creationMoment" value="1990/07/12 15:00" />
+		<property name="deadline" value="2020/04/04" />
+		<property name="text" value="This is a description of a sample announcement" />
+		<property name="ticker" value="RABCD-01234"/>
+	</bean>
+	
+	<bean id="request02" class="acme.entities.reqs.Req">
+		<property name="title" value="Sample Request 02" />
+		<property name="creationMoment" value="2019/01/05 15:00" />
+		<property name="deadline" value="2022/04/04" />
+		<property name="text" value="This is a description of another announcement" />
+		<property name="ticker" value="RXZXZ-01234"/>
+	</bean>
+	
+	
 		<!-- Caceres bulletin -->
 	
 	<bean id="caceresbulletin01" class="acme.entities.bulletins.CaceresBulletin">

@@ -1,19 +1,21 @@
 
-package acme.features.authenticated.request;
+package acme.features.authenticated.req;
 
 import java.util.Collection;
 
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
-import acme.entities.requests.Request;
+import acme.entities.reqs.Req;
 import acme.framework.repositories.AbstractRepository;
 
-public class AuthenticatedRequestRepository extends AbstractRepository {
+@Repository
+public interface AuthenticatedReqRepository extends AbstractRepository {
 
 	@Query("select r from Request r where r.id = ?1")
-	Request findOneById(int id);
+	Req findOneById(int id);
 
 	@Query("select r from Request r where r.deadline > current_date()")
-	Collection<Request> findManyAll();
+	Collection<Req> findManyAll();
 
 }
