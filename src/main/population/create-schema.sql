@@ -20,6 +20,21 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+	create table `challenge` (
+		`id` integer not null,
+		`version` integer not null,
+		`deadline` datetime(6),
+		`description` varchar(255),
+		`goal_bronze` varchar(255),
+		`goal_gold` varchar(255),
+		`goal_silver` varchar(255),
+		`reward_bronze` varchar(255),
+		`reward_gold` varchar(255),
+		`reward_silver` varchar(255),
+		`title` varchar(255),
+		primary key (`id`)
+	) engine=InnoDB;
+
     create table `caceres_bulletin` (
        `id` integer not null,
         `version` integer not null,
