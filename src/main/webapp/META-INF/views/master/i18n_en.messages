@@ -27,6 +27,11 @@ master.menu.sign-in = Sign in
 master.menu.sign-out = Sign out
 
 master.menu.list-challenge = List challenges
+master.menu.list-announcement = List announcements
+master.menu.list-company = List companies
+master.menu.list-offer = List offers
+master.menu.list-top-companies = List top companies
+
 
 # master.menu.anonymous #######################################################
 

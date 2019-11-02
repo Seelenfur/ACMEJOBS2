@@ -299,10 +299,10 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>336</x>
-      <y>306</y>
-      <w>162</w>
-      <h>78</h>
+      <x>402</x>
+      <y>432</y>
+      <w>192</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Shout
@@ -315,8 +315,8 @@ Shout
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>408</y>
+      <x>24</x>
+      <y>522</y>
       <w>162</w>
       <h>78</h>
     </coordinates>
@@ -331,8 +331,8 @@ SanchezBulletin
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>168</x>
-      <y>324</y>
+      <x>204</x>
+      <y>432</y>
       <w>162</w>
       <h>78</h>
     </coordinates>
@@ -347,8 +347,8 @@ MarinBulletin
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>324</y>
+      <x>24</x>
+      <y>432</y>
       <w>162</w>
       <h>78</h>
     </coordinates>
@@ -363,8 +363,8 @@ CaceresBulletin
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>168</x>
-      <y>408</y>
+      <x>204</x>
+      <y>522</y>
       <w>162</w>
       <h>78</h>
     </coordinates>
@@ -396,6 +396,23 @@ Challenge
 + rewardGold: String {NotBlank}
 + rewardSilver: String {NotBlank}
 + rewardBronze: String {NotBlank}</panel_attributes>
+      <additional_attributes/>
+  </element>
+
+    <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>402</x>
+      <y>522</y>
+      <w>186</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>Announcement
+--
++ title: String {NotBlank}
++ moment: Date {Temporal{TIMESTAP}, Past}
++ moreInfo: String {URL}
++ text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

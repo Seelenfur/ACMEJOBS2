@@ -35,29 +35,45 @@
 		<property name="text" value="Shout 4" />
 		<property name="moment" value="2019/09/06 01:00" />
 	</bean>
-	
-		<!-- Caceres bulletin -->
-	
+
+	<!-- Announcements -->
+
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 02" />
+		<property name="moment" value="2019/06/07 10:00" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="text" value="This is a description of another announcement" />
+	</bean>
+
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample very old announcement 03" />
+		<property name="moment" value="1930/01/09 04:00" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="text" value="This is a description of a very old announcement" />
+	</bean>
+
+	<!-- Caceres bulletin -->
+
 	<bean id="caceresbulletin01" class="acme.entities.bulletins.CaceresBulletin">
 		<property name="author" value="David Caceres" />
 		<property name="text" value="Bulletin 1" />
 		<property name="moment" value="2019/09/06 01:00" />
 	</bean>
-	
+
 	<bean id="caceresbulletin02" class="acme.entities.bulletins.CaceresBulletin">
 		<property name="author" value="David Caceres" />
 		<property name="text" value="Bulletin 2" />
 		<property name="moment" value="2019/09/07 09:00" />
 	</bean>
-  
-  	<!-- Gonzalez bulletin -->
-	
+
+	<!-- Gonzalez bulletin -->
+
 	<bean id="gonzalezbulletin01" class="acme.entities.bulletins.GonzalezBulletin">
 		<property name="author" value="Alejandro Gonzalez" />
 		<property name="text" value="Bulletin 1" />
 		<property name="moment" value="2019/09/01 05:00" />
 	</bean>
-	
+
 	<bean id="gonzalezbulletin02" class="acme.entities.bulletins.GonzalezBulletin">
 		<property name="author" value="Alejandro Gonzalez" />
 		<property name="text" value="Bulletin 2" />
@@ -71,7 +87,7 @@
 		<property name="text" value="Marin Bulletin 01" />
 		<property name="moment" value="2019/09/09 10:00" />
 	</bean>
-	
+
 	<bean id="marinBulletin02" class="acme.entities.bulletins.MarinBulletin">
 		<property name="author" value="María Marín" />
 		<property name="text" value="Marin Bulletin 02" />
@@ -85,12 +101,13 @@
 		<property name="text" value="My first bulletin" />
 		<property name="moment" value="2019/09/06 01:00" />
 	</bean>
-	
+
 	<bean id="sanchezbulletin02" class="acme.entities.bulletins.SanchezBulletin">
 		<property name="author" value="Sergio Sánchez" />
 		<property name="text" value="My second bulletin" />
 		<property name="moment" value="2019/09/09 02:00" />
 	</bean>
+
 	
 	<!-- Challenges -->
 	
@@ -105,5 +122,70 @@
 		<property name="rewardSilver" value="reward silver"/>
 		<property name="rewardBronze" value="reward bronze"/>
 	</bean>
+
+
+	<!-- Companies -->
+
+	<bean id="company01" class="acme.entities.company.Company">
+		<property name="name" value="Google" />
+		<property name="sector" value="Tecnología" />
+		<property name="ceo" value="Sundar Pichai" />
+		<property name="activities" value="Realizan actividades varias" />
+		<property name="website" value="http://google.com" />
+		<property name="phone" value="+1 2025550176" />
+		<property name="email" value="google@gmail.com" />
+		<property name="corporated" value="true" />
+		<property name="stars" value="5" />
+	</bean>
+
+	<bean id="company02" class="acme.entities.company.Company">
+		<property name="name" value="Twitter" />
+		<property name="sector" value="Tecnología y comunicaciones" />
+		<property name="ceo" value="Jack Dorsey" />
+		<property name="activities" value="Tienen una aplicación de microblogging." />
+		<property name="website" value="http://twitter.com" />
+		<property name="phone" value="905403328" />
+		<property name="email" value="twitter@twitter.com" />
+		<property name="corporated" value="true" />
+		<property name="stars">
+			<null />
+		</property>
+	</bean>
+
+	<!-- Offers -->
+
+	<bean id="offer01" class="acme.entities.offer.Offer">
+		<property name="title" value="Programador en Acme" />
+		<property name="moment" value="2019/10/20 10:00" />
+		<property name="deadline" value="2020/03/01 10:00" />
+		<property name="description" value="Programar Java." />
+		<property name="minMoney" value="14000€" />
+		<property name="maxMoney" value="18000€" />
+		<property name="ticker" value="OAAAA-00000" />
+	</bean>
+
+	<bean id="offer02" class="acme.entities.offer.Offer">
+		<property name="title" value="Programador en Acme" />
+		<property name="moment" value="2019/10/20 10:00" />
+		<property name="deadline" value="2020/04/03 10:00" />
+		<property name="description" value="Programar Python." />
+		<property name="minMoney" value="12000€" />
+		<property name="maxMoney" value="16000€" />
+		<property name="ticker" value="OAAAA-00001" />
+	</bean>
+
+  	<!-- Challenges -->
 	
+	<bean id="challenge01" class="acme.entities.challenge.Challenge">
+		<property name="title" value="Ejemplo challenge 1"/>
+		<property name="deadline" value="2020/07/27 23:59"/>
+		<property name="description" value="Primer challenge"/>
+		<property name="goalGold" value="goal gold"/>
+		<property name="goalSilver" value="goal silver"/>
+		<property name="goalBronze" value="goal bronze"/>
+		<property name="rewardGold" value="reward gold"/>
+		<property name="rewardSilver" value="reward silver"/>
+		<property name="rewardBronze" value="reward bronze"/>
+	</bean>
+
 </beans>

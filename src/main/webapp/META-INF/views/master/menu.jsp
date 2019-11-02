@@ -20,7 +20,12 @@
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 		
-		<acme:menu-suboption code="master.menu.list-challenge" action="/anonymous/challenge/list" />
+		  <acme:menu-suboption code="master.menu.list-challenge" action="/anonymous/challenge/list" />
+			<acme:menu-suboption code="master.menu.list-top-companies" action="/anonymous/top-companies/list" />
+			<acme:menu-suboption code="master.menu.list-company" action="/anonymous/company/list" />
+
+			<acme:menu-separator />
+
 
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-1" action="http://www.instagram.com/" />
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-2" action="http://www.twitter.com/" />
@@ -28,25 +33,25 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-4" action="http://www.twitch.com/" />
 
 			<acme:menu-separator />
-			
+
 			<acme:menu-suboption code="master.menu.anonymous.list-bulletin-1" action="/anonymous/caceres-bulletin/list" />
 			<acme:menu-suboption code="master.menu.anonymous.create-bulletin-1" action="/anonymous/caceres-bulletin/create" />
-			
-			<acme:menu-separator />
-			
-			<acme:menu-suboption code="master.menu.anonymous.list-bulletin-2" action="/anonymous/gonzalez-bulletin/list" />
-			<acme:menu-suboption code="master.menu.anonymous.create-bulletin-2" action="/anonymous/gonzalez-bulletin/create" />
-			
-			<acme:menu-separator />
-			
-      			<acme:menu-suboption code="master.menu.anonymous.list-bulletin-3" action="/anonymous/marin-bulletin/list"/>
-    			<acme:menu-suboption code="master.menu.anonymous.create-bulletin-3" action="/anonymous/marin-bulletin/create"/>
 
 			<acme:menu-separator />
-			
+
+			<acme:menu-suboption code="master.menu.anonymous.list-bulletin-2" action="/anonymous/gonzalez-bulletin/list" />
+			<acme:menu-suboption code="master.menu.anonymous.create-bulletin-2" action="/anonymous/gonzalez-bulletin/create" />
+
+			<acme:menu-separator />
+
+			<acme:menu-suboption code="master.menu.anonymous.list-bulletin-3" action="/anonymous/marin-bulletin/list" />
+			<acme:menu-suboption code="master.menu.anonymous.create-bulletin-3" action="/anonymous/marin-bulletin/create" />
+
+			<acme:menu-separator />
+
 			<acme:menu-suboption code="master.menu.anonymous.list-bulletin-4" action="/anonymous/sanchez-bulletin/list" />
 			<acme:menu-suboption code="master.menu.anonymous.create-bulletin-4" action="/anonymous/sanchez-bulletin/create" />
-				
+
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
@@ -69,6 +74,12 @@
 		<acme:menu-option code="master.menu.sign-in" action="/master/sign-in" access="isAnonymous()" />
 
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.list-announcement" action="/authenticated/announcement/list" />
+			<acme:menu-suboption code="master.menu.list-offer" action="/authenticated/offer/list" />
+			<acme:menu-suboption code="master.menu.list-company" action="/authenticated/company/list" />
+			
+			<acme:menu-separator />
+			
 			<acme:menu-suboption code="master.menu.user-account.general-data" action="/authenticated/user-account/update" />
 			<acme:menu-suboption code="master.menu.user-account.become-provider" action="/authenticated/provider/create"
 				access="!hasRole('Provider')" />
