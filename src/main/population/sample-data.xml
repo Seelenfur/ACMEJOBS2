@@ -108,6 +108,21 @@
 		<property name="moment" value="2019/09/09 02:00" />
 	</bean>
 
+	
+	<!-- Challenges -->
+	
+	<bean id="challenge01" class="acme.entities.challenge.Challenge">
+		<property name="title" value="Ejemplo challenge 1"/>
+		<property name="deadline" value="2020/07/27 23:59"/>
+		<property name="description" value="Primer challenge"/>
+		<property name="goalGold" value="goal gold"/>
+		<property name="goalSilver" value="goal silver"/>
+		<property name="goalBronze" value="goal bronze"/>
+		<property name="rewardGold" value="reward gold"/>
+		<property name="rewardSilver" value="reward silver"/>
+		<property name="rewardBronze" value="reward bronze"/>
+	</bean>
+
 
 	<!-- Companies -->
 
@@ -157,6 +172,20 @@
 		<property name="minMoney" value="12000€" />
 		<property name="maxMoney" value="16000€" />
 		<property name="ticker" value="OAAAA-00001" />
+	</bean>
+
+  	<!-- Challenges -->
+	
+	<bean id="challenge01" class="acme.entities.challenge.Challenge">
+		<property name="title" value="Ejemplo challenge 1"/>
+		<property name="deadline" value="2020/07/27 23:59"/>
+		<property name="description" value="Primer challenge"/>
+		<property name="goalGold" value="goal gold"/>
+		<property name="goalSilver" value="goal silver"/>
+		<property name="goalBronze" value="goal bronze"/>
+		<property name="rewardGold" value="reward gold"/>
+		<property name="rewardSilver" value="reward silver"/>
+		<property name="rewardBronze" value="reward bronze"/>
 	</bean>
 
 </beans>
