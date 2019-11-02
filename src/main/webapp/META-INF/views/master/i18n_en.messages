@@ -32,7 +32,6 @@ master.menu.list-company = List companies
 master.menu.list-offer = List offers
 master.menu.list-top-companies = List top companies
 
-
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous
@@ -41,7 +40,6 @@ master.menu.anonymous.favourite-link-1 = Maria's link
 master.menu.anonymous.favourite-link-2 = Sergio's link
 master.menu.anonymous.favourite-link-3 = David's link
 master.menu.anonymous.favourite-link-4 = Alejandro's link
-
 
 master.menu.anonymous.list-bulletin-1 = David's bulletin
 master.menu.anonymous.create-bulletin-1 = Publish in David's bulletin
