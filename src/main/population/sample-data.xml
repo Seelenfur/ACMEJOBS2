@@ -38,6 +38,13 @@
 
 	<!-- Announcements -->
 
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 01" />
+		<property name="moment" value="2019/10/07 10:00" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="text" value="This is a description of an announcement" />
+	</bean>
+
 	<bean id="announcement02" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 02" />
 		<property name="moment" value="2019/06/07 10:00" />
@@ -108,22 +115,6 @@
 		<property name="moment" value="2019/09/09 02:00" />
 	</bean>
 
-	
-	<!-- Challenges -->
-	
-	<bean id="challenge01" class="acme.entities.challenge.Challenge">
-		<property name="title" value="Ejemplo challenge 1"/>
-		<property name="deadline" value="2020/07/27 23:59"/>
-		<property name="description" value="Primer challenge"/>
-		<property name="goalGold" value="goal gold"/>
-		<property name="goalSilver" value="goal silver"/>
-		<property name="goalBronze" value="goal bronze"/>
-		<property name="rewardGold" value="reward gold"/>
-		<property name="rewardSilver" value="reward silver"/>
-		<property name="rewardBronze" value="reward bronze"/>
-	</bean>
-
-
 	<!-- Companies -->
 
 	<bean id="company01" class="acme.entities.company.Company">
@@ -174,18 +165,18 @@
 		<property name="ticker" value="OAAAA-00001" />
 	</bean>
 
-  	<!-- Challenges -->
-	
+	<!-- Challenges -->
+
 	<bean id="challenge01" class="acme.entities.challenge.Challenge">
-		<property name="title" value="Ejemplo challenge 1"/>
-		<property name="deadline" value="2020/07/27 23:59"/>
-		<property name="description" value="Primer challenge"/>
-		<property name="goalGold" value="goal gold"/>
-		<property name="goalSilver" value="goal silver"/>
-		<property name="goalBronze" value="goal bronze"/>
-		<property name="rewardGold" value="reward gold"/>
-		<property name="rewardSilver" value="reward silver"/>
-		<property name="rewardBronze" value="reward bronze"/>
+		<property name="title" value="Ejemplo challenge 1" />
+		<property name="deadline" value="2020/07/27 23:59" />
+		<property name="description" value="Primer challenge" />
+		<property name="goalGold" value="goal gold" />
+		<property name="goalSilver" value="goal silver" />
+		<property name="goalBronze" value="goal bronze" />
+		<property name="rewardGold" value="30€" />
+		<property name="rewardSilver" value="20€" />
+		<property name="rewardBronze" value="10€" />
 	</bean>
 
 </beans>

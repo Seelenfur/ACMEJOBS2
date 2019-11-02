@@ -9,8 +9,5 @@ authenticated.challenge.form.label.rewardSilver= Reward silver:
 authenticated.challenge.form.label.rewardBronze= Reward bronze:
 authenticated.challenge.form.button.return= Return
 
-authenticated.announcement.list.label.moment= Moment
-authenticated.announcement.list.label.title= Title
 authenticated.challenge.list.label.deadline = Deadline
 authenticated.challenge.list.label.title = Title
-authenticated.challenge.list.label.description = Description

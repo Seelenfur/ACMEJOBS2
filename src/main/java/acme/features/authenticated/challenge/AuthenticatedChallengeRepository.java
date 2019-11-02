@@ -10,7 +10,7 @@ import acme.entities.challenge.Challenge;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public class AuthenticatedChallengeRepository extends AbstractRepository {
+public interface AuthenticatedChallengeRepository extends AbstractRepository {
 
 	@Query("select a from Challenge a where a.id = ?1")
 	Challenge findOneById(int id);

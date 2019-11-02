@@ -30,27 +30,30 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-	create table `challenge` (
-		`id` integer not null,
-		`version` integer not null,
-		`deadline` datetime(6),
-		`description` varchar(255),
-		`goal_bronze` varchar(255),
-		`goal_gold` varchar(255),
-		`goal_silver` varchar(255),
-		`reward_bronze` varchar(255),
-		`reward_gold` varchar(255),
-		`reward_silver` varchar(255),
-		`title` varchar(255),
-		primary key (`id`)
-	) engine=InnoDB;
-
     create table `caceres_bulletin` (
        `id` integer not null,
         `version` integer not null,
         `author` varchar(255),
         `moment` datetime(6),
         `text` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `challenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `goal_bronze` varchar(255),
+        `goal_gold` varchar(255),
+        `goal_silver` varchar(255),
+        `reward_bronze_amount` double precision,
+        `reward_bronze_currency` varchar(255),
+        `reward_gold_amount` double precision,
+        `reward_gold_currency` varchar(255),
+        `reward_silver_amount` double precision,
+        `reward_silver_currency` varchar(255),
+        `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

@@ -26,10 +26,10 @@
     drop table if exists `anonymous`;
 
     drop table if exists `authenticated`;
-    
-    drop table if exists `challenge`;
 
     drop table if exists `caceres_bulletin`;
+
+    drop table if exists `challenge`;
 
     drop table if exists `company`;
 

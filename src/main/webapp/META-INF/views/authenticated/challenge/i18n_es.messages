@@ -9,8 +9,5 @@ authenticated.challenge.form.label.rewardSilver= Recompensa plata:
 authenticated.challenge.form.label.rewardBronze= Recompensa bronce:
 authenticated.challenge.form.button.return= Volver atrás
 
-authenticated.announcement.list.label.moment= Momento
-authenticated.announcement.list.label.title= Título
 authenticated.challenge.list.label.deadline = Fecha límite
 authenticated.challenge.list.label.title = Título
-authenticated.challenge.list.label.description = Descripción
