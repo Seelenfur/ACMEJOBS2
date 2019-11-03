@@ -37,7 +37,7 @@ public class Offer extends DomainEntity {
 	@Future
 	private Date				deadline;
 
-	@NotNull
+	@NotBlank
 	private String				description;
 
 	@NotNull
@@ -48,6 +48,7 @@ public class Offer extends DomainEntity {
 	@Valid
 	private Money				maxMoney;
 
+	@NotBlank
 	@Column(unique = true)
 	@Pattern(regexp = "^[O][A-Z]{4}[-][0-9]{5}$")
 	private String				ticker;

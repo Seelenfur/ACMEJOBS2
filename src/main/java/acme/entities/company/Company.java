@@ -33,12 +33,15 @@ public class Company extends DomainEntity {
 	@NotBlank
 	private String				activities;
 
+	@NotBlank
 	@URL
 	private String				website;
 
+	@NotBlank
 	@Pattern(regexp = "^([+][1-9][0-9]{0,2}[ ])?([(][1-9][0-9]{0,3}[)][ ])?[0-9]{6,10}$")
 	private String				phone;
 
+	@NotBlank
 	@Email
 	private String				email;
 
