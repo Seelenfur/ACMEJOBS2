@@ -2,6 +2,7 @@
 package acme.entities.company;
 
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
@@ -47,6 +48,7 @@ public class Company extends DomainEntity {
 	private Integer				stars;
 
 
+	@Transient
 	public String getCorporatedName() {
 		return this.name + (this.corporated ? ", Inc." : ", LLC");
 	}
