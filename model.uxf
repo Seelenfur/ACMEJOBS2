@@ -456,8 +456,8 @@ Company
                           Pattern("^([+][1-9][0-9]{0,2}[ ])?([(][1-9][0-9]{0,3}[)][ ])?[0-9]{6,10}$")}
 + email: String {NotBlank, Email}
 + corporated: boolean
-+ stars = Integer {Range(0, 5)}
-+ / corporatedName = String</panel_attributes>
++ stars: Integer {Range(0, 5)}
++ / corporatedName: String</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
