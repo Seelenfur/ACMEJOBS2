@@ -143,7 +143,7 @@
 		</property>
 	</bean>
 
-	<bean id="company02" class="acme.entities.company.Company">
+	<bean id="company03" class="acme.entities.company.Company">
 		<property name="name" value="Mercadona" />
 		<property name="sector" value="Alimentación" />
 		<property name="ceo" value="Juan Roig" />
