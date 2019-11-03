@@ -131,12 +131,26 @@
 
 	<bean id="company02" class="acme.entities.company.Company">
 		<property name="name" value="Twitter" />
-		<property name="sector" value="Tecnología y comunicaciones" />
+		<property name="sector" value="Tecnología" />
 		<property name="ceo" value="Jack Dorsey" />
 		<property name="activities" value="Tienen una aplicación de microblogging." />
 		<property name="website" value="http://twitter.com" />
 		<property name="phone" value="905403328" />
 		<property name="email" value="twitter@twitter.com" />
+		<property name="corporated" value="true" />
+		<property name="stars">
+			<null />
+		</property>
+	</bean>
+
+	<bean id="company02" class="acme.entities.company.Company">
+		<property name="name" value="Mercadona" />
+		<property name="sector" value="Alimentación" />
+		<property name="ceo" value="Juan Roig" />
+		<property name="activities" value="Cadena de supermercados española." />
+		<property name="website" value="https://www.mercadona.es/" />
+		<property name="phone" value="900500103" />
+		<property name="email" value="sugerencias@mercadona.es" />
 		<property name="corporated" value="true" />
 		<property name="stars">
 			<null />
