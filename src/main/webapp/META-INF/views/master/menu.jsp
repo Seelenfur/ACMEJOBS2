@@ -26,6 +26,10 @@
 
 			<acme:menu-separator />
 
+			<acme:menu-suboption code="master.menu.anonymous.list-shout" action="/anonymous/shout/list" />
+			<acme:menu-suboption code="master.menu.anonymous.create-shout" action="/anonymous/shout/create" />
+
+			<acme:menu-separator />
 
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-1" action="http://www.instagram.com/" />
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-2" action="http://www.twitter.com/" />

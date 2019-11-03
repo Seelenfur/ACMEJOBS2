@@ -41,6 +41,9 @@ master.menu.anonymous.favourite-link-2 = Sergio's link
 master.menu.anonymous.favourite-link-3 = David's link
 master.menu.anonymous.favourite-link-4 = Alejandro's link
 
+master.menu.anonymous.list-shout = List shouts
+master.menu.anonymous.create-shout = Shout!
+
 master.menu.anonymous.list-bulletin-1 = David's bulletin
 master.menu.anonymous.create-bulletin-1 = Publish in David's bulletin
 
