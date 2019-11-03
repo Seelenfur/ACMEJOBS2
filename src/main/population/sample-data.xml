@@ -152,9 +152,7 @@
 		<property name="phone" value="900500103" />
 		<property name="email" value="sugerencias@mercadona.es" />
 		<property name="corporated" value="true" />
-		<property name="stars">
-			<null />
-		</property>
+		<property name="stars" value="5" />
 	</bean>
 
 	<!-- Offers -->
