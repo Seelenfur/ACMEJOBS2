@@ -13,7 +13,7 @@ import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Administrator;
 
 @Controller
-@RequestMapping("/administrator/customisation-parameters/")
+@RequestMapping("/administrator/spam-word/")
 public class AdministratorCustomisationParametersController extends AbstractController<Administrator, SpamWord> {
 
 	@Autowired

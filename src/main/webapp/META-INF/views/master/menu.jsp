@@ -59,7 +59,7 @@
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
-			<acme:menu-suboption code="master.menu.list-customisation-parameters" action="/administrator/customisation-parameters/list" />
+			<acme:menu-suboption code="master.menu.list-customisation-parameters" action="/administrator/spam-word/list" />
 			<acme:menu-suboption code="master.menu.list-announcement" action="/administrator/announcement/list" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list" />
