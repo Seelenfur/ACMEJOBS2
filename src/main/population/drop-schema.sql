@@ -31,6 +31,8 @@
 
     drop table if exists `challenge`;
 
+    drop table if exists `commercial_banner`;
+
     drop table if exists `company`;
 
     drop table if exists `consumer`;
@@ -39,6 +41,8 @@
 
     drop table if exists `marin_bulletin`;
 
+    drop table if exists `non_commercial_banner`;
+
     drop table if exists `offer`;
 
     drop table if exists `provider`;
@@ -46,6 +50,8 @@
     drop table if exists `sanchez_bulletin`;
 
     drop table if exists `shout`;
+
+    drop table if exists `spam_word`;
 
     drop table if exists `user_account`;
 

@@ -57,6 +57,16 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `commercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `targeturl` varchar(255),
+        `credit_card` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `company` (
        `id` integer not null,
         `version` integer not null,
@@ -99,6 +109,16 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `non_commercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `targeturl` varchar(255),
+        `jingle` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `offer` (
        `id` integer not null,
         `version` integer not null,
@@ -126,9 +146,9 @@
     create table `sanchez_bulletin` (
        `id` integer not null,
         `version` integer not null,
-        `author` varchar(255),
+        `description` varchar(255),
         `moment` datetime(6),
-        `text` varchar(255),
+        `web` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -138,6 +158,14 @@
         `author` varchar(255),
         `moment` datetime(6),
         `text` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `spam_word` (
+       `id` integer not null,
+        `version` integer not null,
+        `word` varchar(255),
+        `word_threshold` float,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -161,6 +189,9 @@
 
     alter table `offer` 
        add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
+
+    alter table `spam_word` 
+       add constraint UK_mugf2ycw8syf66s4blf0ou0o5 unique (`word`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
