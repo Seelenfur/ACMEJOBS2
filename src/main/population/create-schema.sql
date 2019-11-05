@@ -143,6 +143,19 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `req` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
+        `reward_amount` double precision,
+        `reward_currency` varchar(255),
+        `text` varchar(255),
+        `ticker` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `sanchez_bulletin` (
        `id` integer not null,
         `version` integer not null,
@@ -189,6 +202,9 @@
 
     alter table `offer` 
        add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
+
+    alter table `req` 
+       add constraint UK_k5ppoa203wtlmvp210ttcxxg2 unique (`ticker`);
 
     alter table `spam_word` 
        add constraint UK_mugf2ycw8syf66s4blf0ou0o5 unique (`word`);

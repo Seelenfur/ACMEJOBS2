@@ -47,6 +47,8 @@
 
     drop table if exists `provider`;
 
+    drop table if exists `req`;
+
     drop table if exists `sanchez_bulletin`;
 
     drop table if exists `shout`;
