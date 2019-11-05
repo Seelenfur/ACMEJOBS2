@@ -66,6 +66,8 @@ master.menu.anonymous.create-bulletin-4 = Publicar en boletín de Sergio
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.dashboard.listing = Mostrar indicadores
+master.menu.administrator.chart= Empresas e inversores por sector
 
 # master.menu.provider ########################################################
 

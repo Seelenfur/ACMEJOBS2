@@ -16,4 +16,6 @@ import acme.framework.components.Command;
 
 public enum CustomCommand implements Command {
 
+	LISTING, CHART;
+
 }
