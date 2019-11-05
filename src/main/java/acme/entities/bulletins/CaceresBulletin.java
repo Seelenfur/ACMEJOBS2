@@ -27,4 +27,6 @@ public class CaceresBulletin extends DomainEntity {
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	private Date				moment;
+
+	private String				statement;
 }
