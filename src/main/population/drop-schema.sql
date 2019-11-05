@@ -33,6 +33,8 @@
 
     drop table if exists `gonzalez_bulletin`;
 
+    drop table if exists `investor`;
+
     drop table if exists `marin_bulletin`;
 
     drop table if exists `provider`;

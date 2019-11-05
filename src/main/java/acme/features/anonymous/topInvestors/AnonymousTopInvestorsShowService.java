@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.investor;
+package acme.features.anonymous.topInvestors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,10 +11,10 @@ import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AnonymousInvestorShowService implements AbstractShowService<Anonymous, Investor> {
+public class AnonymousTopInvestorsShowService implements AbstractShowService<Anonymous, Investor> {
 
 	@Autowired
-	private AnonymousInvestorRepository repository;
+	private AnonymousTopInvestorsRepository repository;
 
 
 	@Override

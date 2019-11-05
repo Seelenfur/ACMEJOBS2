@@ -13,4 +13,9 @@ anonymous.investor.form.label.sector = Sector
 anonymous.investor.form.label.investorStatement = Investor Statement
 anonymous.investor.form.label.starNumber = Star Number
 
+anonymous.investor.list.label.name = Name
+anonymous.investor.list.label.sector = Sector
+anonymous.investor.list.label.investorStatement = Investor Statement
+anonymous.investor.list.label.starNumber = Star Number
+
 anonymous.investor.form.button.return = Return

@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.anonymous.investor;
+package acme.features.anonymous.topInvestors;
 
 import javax.annotation.PostConstruct;
 
@@ -24,15 +24,15 @@ import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Anonymous;
 
 @Controller
-@RequestMapping("/anonymous/investor/")
-public class AnonymousInvestorController extends AbstractController<Anonymous, Investor> {
+@RequestMapping("/anonymous/top-investors/")
+public class AnonymousTopInvestorsController extends AbstractController<Anonymous, Investor> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnonymousInvestorListService	listService;
+	private AnonymousTopInvestorsListService	listService;
 	@Autowired
-	private AnonymousInvestorShowService	showService;
+	private AnonymousTopInvestorsShowService	showService;
 
 
 	// Constructors -----------------------------------------------------------

@@ -18,11 +18,11 @@
 
 <tiles-definitions>
 	
-	<definition name="authenticated/investor/list" extends="master">
+	<definition name="anonymous/top-investors/list" extends="master">
 		<put-attribute name="body" type="template" value="../anonymous/investor/list.jsp"/>
 	</definition>
 	
-	<definition name="authenticated/investor/form" extends="master">
+	<definition name="anonymous/top-investors/form" extends="master">
 		<put-attribute name="body" type="template" value="../anonymous/investor/form.jsp"/>
 	</definition>
 

@@ -47,6 +47,6 @@ public class AuthenticatedInvestorListService implements AbstractListService<Aut
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "name", "sector", "investorStatement", "stars");
+		request.unbind(entity, model, "name", "sector", "investorStatement", "starNumber");
 	}
 }

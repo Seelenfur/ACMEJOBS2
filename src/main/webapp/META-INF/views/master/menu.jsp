@@ -19,8 +19,11 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
+		
+			<acme:menu-suboption code="master.menu.list-top-investors" action="/anonymous/top-investors/list" />
 			<acme:menu-suboption code="master.menu.list-investor" action="/anonymous/investor/list" />
 			
+			<acme:menu-separator />
 			
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-1" action="http://www.instagram.com/" />
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-2" action="http://www.twitter.com/" />
@@ -69,6 +72,8 @@
 		<acme:menu-option code="master.menu.sign-in" action="/master/sign-in" access="isAnonymous()" />
 
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
+		<acme:menu-suboption code="master.menu.list-announcement" action="/authenticated/announcement/list" />
+		<acme:menu-suboption code="master.menu.list-investor" action="/authenticated/investor/list" />
 			<acme:menu-suboption code="master.menu.user-account.general-data" action="/authenticated/user-account/update" />
 			<acme:menu-suboption code="master.menu.user-account.become-provider" action="/authenticated/provider/create"
 				access="!hasRole('Provider')" />

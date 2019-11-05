@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.investor;
+package acme.features.anonymous.topInvestors;
 
 import java.util.Collection;
 
@@ -13,12 +13,12 @@ import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AnonymousInvestorListService implements AbstractListService<Anonymous, Investor> {
+public class AnonymousTopInvestorsListService implements AbstractListService<Anonymous, Investor> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	AnonymousInvestorRepository repository;
+	AnonymousTopInvestorsRepository repository;
 
 
 	// AbstractListService<Administrator, CaceresBulletin interface --------------
