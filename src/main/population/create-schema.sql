@@ -100,6 +100,16 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `investor` (
+       `id` integer not null,
+        `version` integer not null,
+        `investor_statement` varchar(255),
+        `name` varchar(255),
+        `sector` varchar(255),
+        `star_number` integer,
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `marin_bulletin` (
        `id` integer not null,
         `version` integer not null,

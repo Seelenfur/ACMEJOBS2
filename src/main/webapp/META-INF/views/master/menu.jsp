@@ -19,6 +19,11 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
+		
+			<acme:menu-suboption code="master.menu.list-top-investors" action="/anonymous/top-investors/list" />
+			<acme:menu-suboption code="master.menu.list-investor" action="/anonymous/investor/list" />
+			
+			<acme:menu-separator />
 
 			<acme:menu-suboption code="master.menu.list-announcement" action="/anonymous/announcement/list" />
 			<acme:menu-suboption code="master.menu.list-top-companies" action="/anonymous/top-companies/list" />
@@ -81,6 +86,12 @@
 		<acme:menu-option code="master.menu.sign-in" action="/master/sign-in" access="isAnonymous()" />
 
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
+
+		<acme:menu-suboption code="master.menu.list-announcement" action="/authenticated/announcement/list" />
+		<acme:menu-suboption code="master.menu.list-investor" action="/authenticated/investor/list" />
+      
+      			<acme:menu-separator />
+
 			<acme:menu-suboption code="master.menu.list-announcement" action="/authenticated/announcement/list" />
 			<acme:menu-suboption code="master.menu.list-challenge" action="/authenticated/challenge/list" />
 			<acme:menu-suboption code="master.menu.list-offer" action="/authenticated/offer/list" />
@@ -88,6 +99,7 @@
 			<acme:menu-suboption code="master.menu.list-company" action="/authenticated/company/list" />
 
 			<acme:menu-separator />
+
 
 			<acme:menu-suboption code="master.menu.user-account.general-data" action="/authenticated/user-account/update" />
 			<acme:menu-suboption code="master.menu.user-account.become-provider" action="/authenticated/provider/create"
