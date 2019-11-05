@@ -1,10 +1,9 @@
 
 package acme.entities.customisationParameters;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Transient;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Range;
 
@@ -15,23 +14,14 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class SpamWord extends DomainEntity {
+public class CustomisationParameters extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
 
 	@NotBlank
-	@Column(unique = true)
-	private String				word;
+	@Pattern(regexp = "^[^,]+([,][^,]+)*$")
+	private String				spamWords;
 
 	@Range(min = 0, max = 100)
-	private Float				wordThreshold;
-
-
-	@Transient
-	public Float getThreshold() {
-		if (this.wordThreshold == null) {
-			return 1.0f;
-		}
-		return this.wordThreshold;
-	}
+	private float				spamThreshold;
 }

@@ -38,7 +38,7 @@ public class Company extends DomainEntity {
 	private String				website;
 
 	@NotBlank
-	@Pattern(regexp = "^([+][1-9][0-9]{0,2}[ ])?([(][1-9][0-9]{0,3}[)][ ])?[0-9]{6,10}$")
+	@Pattern(regexp = "^([+][1-9][0-9]{0,2}[ ])?([(][0-9]{1,4}[)][ ])?[0-9]{6,10}$")
 	private String				phone;
 
 	@NotBlank
@@ -53,6 +53,15 @@ public class Company extends DomainEntity {
 
 	@Transient
 	public String getCorporatedName() {
-		return this.name + (this.corporated ? ", Inc." : ", LLC");
+		StringBuilder sb = new StringBuilder();
+
+		sb.append(this.name);
+		if (this.corporated) {
+			sb.append(", Inc.");
+		} else {
+			sb.append(", LLC");
+		}
+
+		return sb.toString();
 	}
 }

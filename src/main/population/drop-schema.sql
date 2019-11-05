@@ -37,6 +37,8 @@
 
     drop table if exists `consumer`;
 
+    drop table if exists `customisation_parameters`;
+
     drop table if exists `gonzalez_bulletin`;
 
     drop table if exists `investor`;
@@ -54,8 +56,6 @@
     drop table if exists `sanchez_bulletin`;
 
     drop table if exists `shout`;
-
-    drop table if exists `spam_word`;
 
     drop table if exists `user_account`;
 

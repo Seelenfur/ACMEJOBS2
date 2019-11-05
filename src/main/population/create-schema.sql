@@ -91,6 +91,14 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `customisation_parameters` (
+       `id` integer not null,
+        `version` integer not null,
+        `spam_threshold` float not null,
+        `spam_words` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `gonzalez_bulletin` (
        `id` integer not null,
         `version` integer not null,
@@ -184,14 +192,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `spam_word` (
-       `id` integer not null,
-        `version` integer not null,
-        `word` varchar(255),
-        `word_threshold` float,
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `user_account` (
        `id` integer not null,
         `version` integer not null,
@@ -215,9 +215,6 @@
 
     alter table `req` 
        add constraint UK_k5ppoa203wtlmvp210ttcxxg2 unique (`ticker`);
-
-    alter table `spam_word` 
-       add constraint UK_mugf2ycw8syf66s4blf0ou0o5 unique (`word`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
