@@ -418,22 +418,21 @@ Announcement
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>204</x>
+      <x>732</x>
       <y>300</y>
       <w>198</w>
       <h>114</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Offer
+Req
 --
 + title: String {NotBlank}
-+ moment: Date {Temporal(TIMESTAMP), Past}
++ creationMoment: Date {Temporal(TIMESTAMP), Past}
 + deadline: Date {Temporal(TIMESTAMP), Future}
-+ description: String {NotBlank}
-+ minMoney: Money {NotNull, Valid}
-+ maxMoney: Money {NotNull, Valid}
++ text: String {NotBlank}
++ reward: Money {NotNull, Valid}
 + ticker: String {NotBlank, Unique,
-                           Pattern("^[O][A-Z]{4}[-][0-9]{5}$")}</panel_attributes>
+                           Pattern("^[R][A-Z]{4}[-][0-9]{5}$")}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -458,6 +457,44 @@ Company
 + corporated: boolean
 + stars: Integer {Range(0, 5)}
 + / corporatedName: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>612</x>
+      <y>444</y>
+      <w>174</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+InvestorRecords
+--
++name: String{NotBlank}
++sector: String{NotBlank}
++investingStatement: String{NotBlank}
++starNumber: Integer{Range(0,5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>204</x>
+      <y>300</y>
+      <w>198</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Offer
+--
++ title: String {NotBlank}
++ moment: Date {Temporal(TIMESTAMP), Past}
++ deadline: Date {Temporal(TIMESTAMP), Future}
++ description: String {NotBlank}
++ minMoney: Money {NotNull, Valid}
++ maxMoney: Money {NotNull, Valid}
++ ticker: String {NotBlank, Unique,
+                           Pattern("^[O][A-Z]{4}[-][0-9]{5}$")}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

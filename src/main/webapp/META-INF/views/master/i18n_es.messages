@@ -32,9 +32,10 @@ master.menu.list-company = Listar compañías
 master.menu.list-offer = Listar ofertas
 master.menu.list-top-companies = Listar compañías top
 master.menu.list-customisation-parameters = Listar parámetros de customización
+master.menu.list-req = Listar peticiones
 
-master.menu.list-top-investors = Lista mejores inversores
-master.menu.list-investor = Lista inversores
+master.menu.list-top-investors = Listar mejores inversores
+master.menu.list-investor = Listar inversores
 
 # master.menu.anonymous #######################################################
 

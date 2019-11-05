@@ -35,7 +35,7 @@ master.menu.list-company = List companies
 master.menu.list-offer = List offers
 master.menu.list-top-companies = List top companies
 master.menu.list-customisation-parameters = List customisation parameters
-
+master.menu.list-req = List requests
 
 # master.menu.anonymous #######################################################
 
