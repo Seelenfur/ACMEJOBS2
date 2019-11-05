@@ -21,3 +21,5 @@ authenticated.req.list.label.title = Título
 authenticated.req.list.label.creationMoment = Fecha
 authenticated.req.list.label.reward = Recompensa
 authenticated.req.list.label.deadline = Fecha límite
+authenticated.req.list.label.text = Descripción
+authenticated.req.list.label.ticker = Ticker
