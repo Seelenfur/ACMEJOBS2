@@ -39,8 +39,8 @@ public class AnonymousSanchezBulletinCreateService implements AbstractCreateServ
 		moment = new Date(System.currentTimeMillis() - 1);
 
 		result = new SanchezBulletin();
-		result.setAuthor("Sergio");
-		result.setText("Hola");
+		result.setWeb("http://twitter.com");
+		result.setDescription("Página de microblogging.");
 		result.setMoment(moment);
 
 		return result;
@@ -52,7 +52,7 @@ public class AnonymousSanchezBulletinCreateService implements AbstractCreateServ
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "author", "text");
+		request.unbind(entity, model, "web", "description");
 	}
 
 	@Override
