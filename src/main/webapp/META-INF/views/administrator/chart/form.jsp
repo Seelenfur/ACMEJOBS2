@@ -20,7 +20,7 @@
 				],
 			datasets : [
 				{
-					backgroundColor:"rgba(74, 189, 172, 0.7)",
+					backgroundColor:"rgba(74, 10, 30, 0.7)",
 					label:"<acme:message code='administrator.chart.form.label.investor'/>",
 					data :[<jstl:forEach 
 				    	var="i" 
@@ -30,7 +30,7 @@
 				 	]
 				},
 				{
-					backgroundColor:"rgba(247, 183, 51, 0.7)",
+					backgroundColor:"rgba(247, 20, 40, 0.7)",
 					label:"<acme:message code='administrator.chart.form.label.companies'/>",
 					data :[<jstl:forEach 
 			    		var="i" 
