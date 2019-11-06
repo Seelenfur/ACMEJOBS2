@@ -29,22 +29,20 @@ public class AdministratorChartShowService implements AbstractShowService<Admini
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "totalNumberOfCompaniesBySector", "totalNumberOfInvestorsBySector", "investorSector", "companySector");
-
+		request.unbind(entity, model, "investorsCommonSectors", "companiesCommonSectors", "companySectors", "investorSectors");
 	}
 
 	@Override
 	public Chart findOne(final Request<Chart> request) {
-
 		assert request != null;
+
 		Chart result = new Chart();
 
-		result.setTotalNumberOfCompaniesBySector(this.repository.findTotalNumberOfCompaniesBySector());
-		result.setTotalNumberOfInvestorsBySector(this.repository.findTotalNumberOfInvestorsBySector());
-		result.setInvestorSector(this.repository.findInvestorSector());
-		result.setCompanySector(this.repository.findCompanySector());
+		result.setCompaniesCommonSectors(this.repository.findCompaniesCommonSectors());
+		result.setInvestorsCommonSectors(this.repository.findInvestorsCommonSectors());
+		result.setCompanySectors(this.repository.findCompanySectors());
+		result.setInvestorSectors(this.repository.findInvestorSectors());
 		return result;
-
 	}
 
 }

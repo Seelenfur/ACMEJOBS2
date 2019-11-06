@@ -2,7 +2,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <h2>
-	<acme:message code="administrator.chart.form.title.totalSectors"/>
+	<acme:message code="administrator.chart.form.title.totalSectors" />
 </h2>
 
 <div>
@@ -12,35 +12,30 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		var data = {
-			labels : [<jstl:forEach 
-			    		var="i" 
-			        	items="${investorSector}">
-			       		"<jstl:out value='${i}'/>",
-			   		 </jstl:forEach>
-				],
+			labels : [	<jstl:forEach var="i" items="${investorsCommonSectors}">"<jstl:out value='${i[0]}'/>",</jstl:forEach>
+						<jstl:forEach var="i" items="${companySectors}">"<jstl:out value='${i[0]}'/>",</jstl:forEach>
+						<jstl:forEach var="i" items="${investorSectors}">"<jstl:out value='${i[0]}'/>",</jstl:forEach>
+					],
 			datasets : [
 				{
-					backgroundColor:"rgba(74, 10, 30, 0.7)",
+					backgroundColor:"rgba(74, 189, 172, 0.7)",
 					label:"<acme:message code='administrator.chart.form.label.investor'/>",
-					data :[<jstl:forEach 
-				    	var="i" 
-				        items="${totalNumberOfInvestorsBySector}">
-				        <jstl:out value="${i}"/>,
-				    	</jstl:forEach>
+					data :[	<jstl:forEach var="i" items="${investorsCommonSectors}"><jstl:out value='${i[1]}'/>,</jstl:forEach>
+							<jstl:forEach var="i" items="${investorSectors}"><jstl:out value='${i[1]}'/>,</jstl:forEach>
+							<jstl:forEach var="i" items="${companySectors}"><jstl:out value='0'/>,</jstl:forEach>
 				 	]
 				},
 				{
-					backgroundColor:"rgba(247, 20, 40, 0.7)",
+					backgroundColor:"rgba(247, 183, 51, 0.7)",
 					label:"<acme:message code='administrator.chart.form.label.companies'/>",
-					data :[<jstl:forEach 
-			    		var="i" 
-			       		items="${totalNumberOfCompaniesBySector}">
-			       		<jstl:out value="${i}"/>,
-			    		</jstl:forEach>
-			 		]
+					data :[	<jstl:forEach var="i" items="${companiesCommonSectors}"><jstl:out value='${i[1]}'/>,</jstl:forEach>
+							<jstl:forEach var="i" items="${investorSectors}"><jstl:out value='0'/>,</jstl:forEach>
+							<jstl:forEach var="i" items="${companySectors}"><jstl:out value='${i[1]}'/>,</jstl:forEach>
+						]
 				}
 			]
 		};
+		
 		var options = {
 			scales : {
 				yAxes : [

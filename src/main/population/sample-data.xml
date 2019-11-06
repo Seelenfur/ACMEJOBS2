@@ -233,6 +233,13 @@
 		<property name="investorStatement" value="Conforme"/>
 		<property name="starNumber" value="5" />
 	</bean>
+	
+	<bean id="investor04" class="acme.entities.investor.Investor">
+		<property name="name" value="Sample investor 01" />
+		<property name="sector" value="Tecnología" />
+		<property name="investorStatement" value="Conforme"/>
+		<property name="starNumber" value="5" />
+	</bean>
 
 	<!-- CustomisationParameters -->
 

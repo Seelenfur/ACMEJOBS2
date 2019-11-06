@@ -11,9 +11,10 @@ import lombok.Setter;
 public class Chart implements Serializable {
 
 	private static final long	serialVersionUID	= 1L;
-	Object[]					totalNumberOfCompaniesBySector;
-	Object[]					totalNumberOfInvestorsBySector;
-	Object[]					investorSector;
-	Object[]					companySector;
+
+	Object[]					investorsCommonSectors;
+	Object[]					companiesCommonSectors;
+	Object[]					companySectors;
+	Object[]					investorSectors;
 
 }
