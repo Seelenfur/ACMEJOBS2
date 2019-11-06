@@ -418,22 +418,21 @@ Announcement
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>272</x>
+      <x>976</x>
       <y>400</y>
       <w>264</w>
       <h>152</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Offer
+Req
 --
 + title: String {NotBlank}
-+ moment: Date {Temporal(TIMESTAMP), Past}
++ creationMoment: Date {Temporal(TIMESTAMP), Past}
 + deadline: Date {Temporal(TIMESTAMP)}
-+ description: String {NotBlank}
-+ minMoney: Money
-+ maxMoney: Money
++ text: String {NotBlank}
++ reward: Money
 + ticker: String {NotBlank, Unique,
-                           Pattern("^[O][A-Z]{4}[-][0-9]{5}$")}</panel_attributes>
+                           Pattern("^[R][A-Z]{4}[-][0-9]{5}$")}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -458,6 +457,60 @@ Company
 + corporated: boolean
 + stars: Integer {Range(0, 5)}
 + / corporatedName: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>808</x>
+      <y>592</y>
+      <w>272</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+CustomisationParameters
+--
++ spamWords: String {NotBlank, 
+				Pattern("^[^,]+([,][^,]+)*$")}
++ spamThreshold: float {Range(min = 0, max = 100)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>272</x>
+      <y>400</y>
+      <w>264</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Offer
+--
++ title: String {NotBlank}
++ moment: Date {Temporal(TIMESTAMP), Past}
++ deadline: Date {Temporal(TIMESTAMP)}
++ description: String {NotBlank}
++ minMoney: Money
++ maxMoney: Money
++ ticker: String {NotBlank, Unique,
+                           Pattern("^[O][A-Z]{4}[-][0-9]{5}$")}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>808</x>
+      <y>696</y>
+      <w>272</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Investor
+--
++ name: String {NotBlank}
++ sector: String {NotBlank}
++ investorStatement: String {NotBlank}
++ starNumber: Integer {@Range(min = 0, max = 5)}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
