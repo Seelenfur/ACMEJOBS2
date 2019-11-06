@@ -52,7 +52,7 @@ public class AnonymousCaceresBulletinCreateService implements AbstractCreateServ
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "author", "text");
+		request.unbind(entity, model, "author", "text", "statement");
 	}
 
 	@Override

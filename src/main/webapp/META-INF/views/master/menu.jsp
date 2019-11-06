@@ -90,6 +90,7 @@
 
 			<acme:menu-suboption code="master.menu.list-announcement" action="/authenticated/announcement/list" />
 			<acme:menu-suboption code="master.menu.list-investor" action="/authenticated/investor/list" />
+      <acme:menu-suboption code="master.menu.list-top-investors" action="/authenticated/top-investors/list" />
 
 			<acme:menu-suboption code="master.menu.list-req" action="/authenticated/request/list" />
 			<acme:menu-suboption code="master.menu.list-challenge" action="/authenticated/challenge/list" />
