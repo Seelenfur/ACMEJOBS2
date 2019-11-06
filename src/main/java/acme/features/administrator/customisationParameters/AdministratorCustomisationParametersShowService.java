@@ -1,6 +1,8 @@
 
 package acme.features.administrator.customisationParameters;
 
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,19 +32,16 @@ public class AdministratorCustomisationParametersShowService implements Abstract
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment", "moreInfo", "text");
+		request.unbind(entity, model, "spamWords", "spamThreshold");
 	}
 
 	@Override
 	public CustomisationParameters findOne(final Request<CustomisationParameters> request) {
-
 		assert request != null;
-		CustomisationParameters result;
-		int id;
+		Collection<CustomisationParameters> result;
 
-		id = request.getModel().getInteger("id");
-		result = null;
+		result = this.repository.findManyAll();
 
-		return result;
+		return result.toArray(new CustomisationParameters[result.size()])[0];
 	}
 }
