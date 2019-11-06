@@ -11,7 +11,7 @@
 	<acme:form-url code="anonymous.company.form.label.website" path="website"/>
 	<acme:form-textbox code="anonymous.company.form.label.phone" path="phone"/>
 	<acme:form-textbox code="anonymous.company.form.label.email" path="email"/>
-	<acme:form-textbox code="anonymous.company.form.label.stars" path="stars"/>
+	<acme:form-integer code="anonymous.company.form.label.stars" path="stars"/>
 	
 	<acme:form-return code="anonymous.company.form.button.return"/>
 </acme:form>

@@ -19,11 +19,9 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-
+			<acme:menu-suboption code="master.menu.list-announcement" action="/anonymous/announcement/list" />
 			<acme:menu-suboption code="master.menu.list-top-investors" action="/anonymous/top-investors/list" />
 			<acme:menu-suboption code="master.menu.list-investor" action="/anonymous/investor/list" />
-
-			<acme:menu-suboption code="master.menu.list-announcement" action="/anonymous/announcement/list" />
 			<acme:menu-suboption code="master.menu.list-top-companies" action="/anonymous/top-companies/list" />
 			<acme:menu-suboption code="master.menu.list-company" action="/anonymous/company/list" />
 
@@ -67,10 +65,11 @@
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown" />
-			<acme:menu-separator/>
+			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.dashboard.listing" action="/administrator/dashboard/listing" />
 			<acme:menu-suboption code="master.menu.administrator.chart" action="/administrator/chart/chart" />
-			<acme:menu-suboption code="master.menu.administrator.show-customisation-parameters" action="/administrator/customisation-parameters/show" />
+			<acme:menu-suboption code="master.menu.administrator.show-customisation-parameters"
+				action="/administrator/customisation-parameters/show" />
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
@@ -89,13 +88,13 @@
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
 
 			<acme:menu-suboption code="master.menu.list-announcement" action="/authenticated/announcement/list" />
+			<acme:menu-suboption code="master.menu.list-top-investors" action="/authenticated/top-investors/list" />
 			<acme:menu-suboption code="master.menu.list-investor" action="/authenticated/investor/list" />
-
+			<acme:menu-suboption code="master.menu.list-top-companies" action="/authenticated/top-companies/list" />
+			<acme:menu-suboption code="master.menu.list-company" action="/authenticated/company/list" />
 			<acme:menu-suboption code="master.menu.list-req" action="/authenticated/request/list" />
 			<acme:menu-suboption code="master.menu.list-challenge" action="/authenticated/challenge/list" />
 			<acme:menu-suboption code="master.menu.list-offer" action="/authenticated/offer/list" />
-			<acme:menu-suboption code="master.menu.list-top-companies" action="/authenticated/top-companies/list" />
-			<acme:menu-suboption code="master.menu.list-company" action="/authenticated/company/list" />
 
 			<acme:menu-separator />
 
