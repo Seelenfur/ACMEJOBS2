@@ -2,7 +2,9 @@
 package acme.features.authenticated.announcement;
 
 import java.util.Collection;
+import java.util.Date;
 
+import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -36,7 +38,8 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 
 		Collection<Announcement> result;
 
-		result = this.repository.findManyAll();
+		Date minDate = DateUtils.addMonths(new Date(), -1);
+		result = this.repository.findManyAfterDate(minDate); // listar solo los más recientes
 
 		return result;
 	}
@@ -47,6 +50,6 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "moment", "title");
+		request.unbind(entity, model, "title", "moment", "moreInfo", "text");
 	}
 }
