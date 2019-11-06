@@ -31,7 +31,6 @@ master.menu.list-announcement = Listar anuncios
 master.menu.list-company = Listar compañías
 master.menu.list-offer = Listar ofertas
 master.menu.list-top-companies = Listar compañías top
-master.menu.list-customisation-parameters = Listar parámetros de customización
 master.menu.list-req = Listar peticiones
 
 master.menu.list-top-investors = Listar mejores inversores
@@ -68,6 +67,8 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.dashboard.listing = Mostrar indicadores
 master.menu.administrator.chart= Compañías e inversores por sector
+master.menu.administrator.list-announcement = Listar todos los anuncios
+master.menu.administrator.show-customisation-parameters = Ver parámetros de customización
 
 # master.menu.provider ########################################################
 

@@ -18,8 +18,8 @@
 
 <tiles-definitions>
 	
-	<definition name="administrator/spam-word/list" extends="master">		
-		<put-attribute name="body" type="template" value="../administrator/spam-word/list.jsp" />
+	<definition name="administrator/customisation-parameters/form" extends="master">		
+		<put-attribute name="body" type="template" value="../administrator/customisation-parameters/form.jsp" />
 	</definition>
 
 </tiles-definitions>

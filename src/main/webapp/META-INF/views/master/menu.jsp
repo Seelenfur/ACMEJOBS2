@@ -62,8 +62,7 @@
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
-			<acme:menu-suboption code="master.menu.list-customisation-parameters" action="/administrator/spam-word/list" />
-			<acme:menu-suboption code="master.menu.list-announcement" action="/administrator/announcement/list" />
+			<acme:menu-suboption code="master.menu.administrator.list-announcement" action="/administrator/announcement/list" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list" />
 			<acme:menu-separator />
@@ -71,6 +70,7 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.dashboard.listing" action="/administrator/dashboard/listing" />
 			<acme:menu-suboption code="master.menu.administrator.chart" action="/administrator/chart/chart" />
+			<acme:menu-suboption code="master.menu.administrator.show-customisation-parameters" action="/administrator/customisation-parameters/show" />
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">

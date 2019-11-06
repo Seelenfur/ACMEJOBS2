@@ -1,0 +1,3 @@
+administrator.customisation-parameters.form.label.spamTitle = Spam
+administrator.customisation-parameters.form.label.spamWords = Palabras spam
+administrator.customisation-parameters.form.label.spamThreshold = Umbral de spam
