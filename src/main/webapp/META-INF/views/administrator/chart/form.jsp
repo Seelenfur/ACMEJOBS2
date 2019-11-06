@@ -18,7 +18,7 @@
 					],
 			datasets : [
 				{
-					backgroundColor:"rgba(74, 189, 172, 0.7)",
+					backgroundColor:"rgb(255,0,0)",
 					label:"<acme:message code='administrator.chart.form.label.investor'/>",
 					data :[	<jstl:forEach var="i" items="${investorsCommonSectors}"><jstl:out value='${i[1]}'/>,</jstl:forEach>
 							<jstl:forEach var="i" items="${investorSectors}"><jstl:out value='${i[1]}'/>,</jstl:forEach>
@@ -26,7 +26,7 @@
 				 	]
 				},
 				{
-					backgroundColor:"rgba(247, 183, 51, 0.7)",
+					backgroundColor:"rgb(0,255,255)",
 					label:"<acme:message code='administrator.chart.form.label.companies'/>",
 					data :[	<jstl:forEach var="i" items="${companiesCommonSectors}"><jstl:out value='${i[1]}'/>,</jstl:forEach>
 							<jstl:forEach var="i" items="${investorSectors}"><jstl:out value='0'/>,</jstl:forEach>
